@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		0266899726A9491100B02C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266899626A9491100B02C5B /* AppDelegate.swift */; };
 		0266899926A9491100B02C5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266899826A9491100B02C5B /* SceneDelegate.swift */; };
-		0266899B26A9491100B02C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266899A26A9491100B02C5B /* ViewController.swift */; };
 		0266899E26A9491100B02C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0266899C26A9491100B02C5B /* Main.storyboard */; };
 		026689A126A9491100B02C5B /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0266899F26A9491100B02C5B /* LittlePink.xcdatamodeld */; };
 		026689A326A9491200B02C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026689A226A9491200B02C5B /* Assets.xcassets */; };
 		026689A626A9491200B02C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026689A426A9491200B02C5B /* LaunchScreen.storyboard */; };
 		02834D6226A9ACF6006FBD31 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 02834D6126A9ACF6006FBD31 /* .gitignore */; };
+		02834D6626A9B269006FBD31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D6526A9B269006FBD31 /* HomeViewController.swift */; };
+		02834D6A26A9B613006FBD31 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D6926A9B613006FBD31 /* FollowViewController.swift */; };
+		02834D6D26A9B632006FBD31 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D6C26A9B632006FBD31 /* DiscoveryViewController.swift */; };
+		02834D7026A9B651006FBD31 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D6F26A9B651006FBD31 /* NearbyViewController.swift */; };
+		02834D7326A9B70D006FBD31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D7226A9B70D006FBD31 /* Constants.swift */; };
 		A83CEA8F49E27EC2FA21CD45 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD7C3AB3D77E126A5789767 /* Pods_LittlePink.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +26,17 @@
 		0266899326A9491100B02C5B /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0266899626A9491100B02C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0266899826A9491100B02C5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0266899A26A9491100B02C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0266899D26A9491100B02C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		026689A026A9491100B02C5B /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
 		026689A226A9491200B02C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026689A526A9491200B02C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026689A726A9491200B02C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02834D6126A9ACF6006FBD31 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		02834D6526A9B269006FBD31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		02834D6926A9B613006FBD31 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		02834D6C26A9B632006FBD31 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		02834D6F26A9B651006FBD31 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
+		02834D7226A9B70D006FBD31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1AD7C3AB3D77E126A5789767 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9954486FD0B6D6842B188DE0 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 		A44640D49EF6D256313A29C8 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +78,8 @@
 			children = (
 				0266899626A9491100B02C5B /* AppDelegate.swift */,
 				0266899826A9491100B02C5B /* SceneDelegate.swift */,
-				0266899A26A9491100B02C5B /* ViewController.swift */,
+				02834D7526A9B871006FBD31 /* Home */,
+				02834D7226A9B70D006FBD31 /* Constants.swift */,
 				0266899C26A9491100B02C5B /* Main.storyboard */,
 				026689A226A9491200B02C5B /* Assets.xcassets */,
 				026689A426A9491200B02C5B /* LaunchScreen.storyboard */,
@@ -78,6 +87,17 @@
 				0266899F26A9491100B02C5B /* LittlePink.xcdatamodeld */,
 			);
 			path = LittlePink;
+			sourceTree = "<group>";
+		};
+		02834D7526A9B871006FBD31 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				02834D6526A9B269006FBD31 /* HomeViewController.swift */,
+				02834D6926A9B613006FBD31 /* FollowViewController.swift */,
+				02834D6C26A9B632006FBD31 /* DiscoveryViewController.swift */,
+				02834D6F26A9B651006FBD31 /* NearbyViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		14F5E73D61E413716B585C11 /* Frameworks */ = {
@@ -212,10 +232,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0266899B26A9491100B02C5B /* ViewController.swift in Sources */,
 				0266899726A9491100B02C5B /* AppDelegate.swift in Sources */,
+				02834D6D26A9B632006FBD31 /* DiscoveryViewController.swift in Sources */,
+				02834D7026A9B651006FBD31 /* NearbyViewController.swift in Sources */,
 				0266899926A9491100B02C5B /* SceneDelegate.swift in Sources */,
+				02834D6A26A9B613006FBD31 /* FollowViewController.swift in Sources */,
 				026689A126A9491100B02C5B /* LittlePink.xcdatamodeld in Sources */,
+				02834D6626A9B269006FBD31 /* HomeViewController.swift in Sources */,
+				02834D7326A9B70D006FBD31 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
