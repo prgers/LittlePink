@@ -19,6 +19,8 @@
 		02834D6D26A9B632006FBD31 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D6C26A9B632006FBD31 /* DiscoveryViewController.swift */; };
 		02834D7026A9B651006FBD31 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D6F26A9B651006FBD31 /* NearbyViewController.swift */; };
 		02834D7326A9B70D006FBD31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D7226A9B70D006FBD31 /* Constants.swift */; };
+		0292213A26AA2255001CE042 /* WaterFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0292213926AA2255001CE042 /* WaterFallViewController.swift */; };
+		02DE2E5626AA261D0077E216 /* WaterFallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE2E5526AA261D0077E216 /* WaterFallCollectionViewCell.swift */; };
 		A83CEA8F49E27EC2FA21CD45 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD7C3AB3D77E126A5789767 /* Pods_LittlePink.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		02834D6C26A9B632006FBD31 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		02834D6F26A9B651006FBD31 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
 		02834D7226A9B70D006FBD31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0292213926AA2255001CE042 /* WaterFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallViewController.swift; sourceTree = "<group>"; };
+		02DE2E5526AA261D0077E216 /* WaterFallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallCollectionViewCell.swift; sourceTree = "<group>"; };
 		1AD7C3AB3D77E126A5789767 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9954486FD0B6D6842B188DE0 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 		A44640D49EF6D256313A29C8 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 			children = (
 				0266899626A9491100B02C5B /* AppDelegate.swift */,
 				0266899826A9491100B02C5B /* SceneDelegate.swift */,
+				0292213926AA2255001CE042 /* WaterFallViewController.swift */,
+				02DE2E5526AA261D0077E216 /* WaterFallCollectionViewCell.swift */,
 				02834D7526A9B871006FBD31 /* Home */,
 				02834D7226A9B70D006FBD31 /* Constants.swift */,
 				0266899C26A9491100B02C5B /* Main.storyboard */,
@@ -233,8 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0266899726A9491100B02C5B /* AppDelegate.swift in Sources */,
+				02DE2E5626AA261D0077E216 /* WaterFallCollectionViewCell.swift in Sources */,
 				02834D6D26A9B632006FBD31 /* DiscoveryViewController.swift in Sources */,
 				02834D7026A9B651006FBD31 /* NearbyViewController.swift in Sources */,
+				0292213A26AA2255001CE042 /* WaterFallViewController.swift in Sources */,
 				0266899926A9491100B02C5B /* SceneDelegate.swift in Sources */,
 				02834D6A26A9B613006FBD31 /* FollowViewController.swift in Sources */,
 				026689A126A9491100B02C5B /* LittlePink.xcdatamodeld in Sources */,
