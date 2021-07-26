@@ -20,7 +20,14 @@
 		02834D7026A9B651006FBD31 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D6F26A9B651006FBD31 /* NearbyViewController.swift */; };
 		02834D7326A9B70D006FBD31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D7226A9B70D006FBD31 /* Constants.swift */; };
 		0292213A26AA2255001CE042 /* WaterFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0292213926AA2255001CE042 /* WaterFallViewController.swift */; };
+		02A7CDC726AA499C00DECD38 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7CDC626AA499C00DECD38 /* TabBarViewController.swift */; };
+		02A7CDD026AA4D9000DECD38 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7CDCF26AA4D9000DECD38 /* PublishViewController.swift */; };
 		02DE2E5626AA261D0077E216 /* WaterFallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE2E5526AA261D0077E216 /* WaterFallCollectionViewCell.swift */; };
+		02F2234126AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2234026AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift */; };
+		02F2CA1926AE4005002641DD /* NoteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2CA1826AE4005002641DD /* NoteEditViewController.swift */; };
+		02F2CA1C26AE54C0002641DD /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2CA1B26AE54C0002641DD /* PhotoCell.swift */; };
+		02F2CA1F26AE5B30002641DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2CA1E26AE5B30002641DD /* Extensions.swift */; };
+		02F2CA6F26AE9960002641DD /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2CA6E26AE9960002641DD /* PhotoFooter.swift */; };
 		A83CEA8F49E27EC2FA21CD45 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD7C3AB3D77E126A5789767 /* Pods_LittlePink.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +47,18 @@
 		02834D6F26A9B651006FBD31 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
 		02834D7226A9B70D006FBD31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0292213926AA2255001CE042 /* WaterFallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallViewController.swift; sourceTree = "<group>"; };
+		02A7CDC626AA499C00DECD38 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		02A7CDCF26AA4D9000DECD38 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
+		02A7CDE926AA6C2200DECD38 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		02A7CDEA26AA6C2200DECD38 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		02A7CDEF26AAA91B00DECD38 /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		02DE2E5526AA261D0077E216 /* WaterFallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallCollectionViewCell.swift; sourceTree = "<group>"; };
+		02F2234026AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
+		02F2CA1826AE4005002641DD /* NoteEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditViewController.swift; sourceTree = "<group>"; };
+		02F2CA1B26AE54C0002641DD /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		02F2CA1E26AE5B30002641DD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		02F2CA6E26AE9960002641DD /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
+		02F2CA7C26AEC495002641DD /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
 		1AD7C3AB3D77E126A5789767 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9954486FD0B6D6842B188DE0 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 		A44640D49EF6D256313A29C8 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,17 +98,14 @@
 		0266899526A9491100B02C5B /* LittlePink */ = {
 			isa = PBXGroup;
 			children = (
-				0266899626A9491100B02C5B /* AppDelegate.swift */,
-				0266899826A9491100B02C5B /* SceneDelegate.swift */,
-				0292213926AA2255001CE042 /* WaterFallViewController.swift */,
-				02DE2E5526AA261D0077E216 /* WaterFallCollectionViewCell.swift */,
+				02A7CDDD26AA65FB00DECD38 /* System */,
+				02A7CDDA26AA65B900DECD38 /* WaterFall */,
 				02834D7526A9B871006FBD31 /* Home */,
-				02834D7226A9B70D006FBD31 /* Constants.swift */,
-				0266899C26A9491100B02C5B /* Main.storyboard */,
-				026689A226A9491200B02C5B /* Assets.xcassets */,
-				026689A426A9491200B02C5B /* LaunchScreen.storyboard */,
-				026689A726A9491200B02C5B /* Info.plist */,
-				0266899F26A9491100B02C5B /* LittlePink.xcdatamodeld */,
+				02A7CDDC26AA65D100DECD38 /* Common */,
+				02A7CDC626AA499C00DECD38 /* TabBarViewController.swift */,
+				02A7CDEE26AAA8D500DECD38 /* Demo */,
+				02F2CA7126AEB258002641DD /* NoteEdit */,
+				02F2CA7C26AEC495002641DD /* LittlePink-Bridging-Header.h */,
 			);
 			path = LittlePink;
 			sourceTree = "<group>";
@@ -104,6 +119,58 @@
 				02834D6F26A9B651006FBD31 /* NearbyViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		02A7CDDA26AA65B900DECD38 /* WaterFall */ = {
+			isa = PBXGroup;
+			children = (
+				0292213926AA2255001CE042 /* WaterFallViewController.swift */,
+				02DE2E5526AA261D0077E216 /* WaterFallCollectionViewCell.swift */,
+			);
+			path = WaterFall;
+			sourceTree = "<group>";
+		};
+		02A7CDDC26AA65D100DECD38 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				02834D7226A9B70D006FBD31 /* Constants.swift */,
+				02F2CA1E26AE5B30002641DD /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		02A7CDDD26AA65FB00DECD38 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				0266899626A9491100B02C5B /* AppDelegate.swift */,
+				0266899826A9491100B02C5B /* SceneDelegate.swift */,
+				0266899C26A9491100B02C5B /* Main.storyboard */,
+				026689A226A9491200B02C5B /* Assets.xcassets */,
+				026689A426A9491200B02C5B /* LaunchScreen.storyboard */,
+				026689A726A9491200B02C5B /* Info.plist */,
+				0266899F26A9491100B02C5B /* LittlePink.xcdatamodeld */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		02A7CDEE26AAA8D500DECD38 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				02A7CDCF26AA4D9000DECD38 /* PublishViewController.swift */,
+				02A7CDEF26AAA91B00DECD38 /* 闭包.playground */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		02F2CA7126AEB258002641DD /* NoteEdit */ = {
+			isa = PBXGroup;
+			children = (
+				02F2CA1826AE4005002641DD /* NoteEditViewController.swift */,
+				02F2CA1B26AE54C0002641DD /* PhotoCell.swift */,
+				02F2CA6E26AE9960002641DD /* PhotoFooter.swift */,
+				02F2234026AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift */,
+			);
+			path = NoteEdit;
 			sourceTree = "<group>";
 		};
 		14F5E73D61E413716B585C11 /* Frameworks */ = {
@@ -156,6 +223,7 @@
 				TargetAttributes = {
 					0266899226A9491100B02C5B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -166,6 +234,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 0266898A26A9491100B02C5B;
 			productRefGroup = 0266899426A9491100B02C5B /* Products */;
@@ -238,13 +307,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F2234126AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift in Sources */,
+				02F2CA1C26AE54C0002641DD /* PhotoCell.swift in Sources */,
 				0266899726A9491100B02C5B /* AppDelegate.swift in Sources */,
 				02DE2E5626AA261D0077E216 /* WaterFallCollectionViewCell.swift in Sources */,
+				02A7CDC726AA499C00DECD38 /* TabBarViewController.swift in Sources */,
+				02F2CA1926AE4005002641DD /* NoteEditViewController.swift in Sources */,
+				02F2CA6F26AE9960002641DD /* PhotoFooter.swift in Sources */,
 				02834D6D26A9B632006FBD31 /* DiscoveryViewController.swift in Sources */,
 				02834D7026A9B651006FBD31 /* NearbyViewController.swift in Sources */,
 				0292213A26AA2255001CE042 /* WaterFallViewController.swift in Sources */,
 				0266899926A9491100B02C5B /* SceneDelegate.swift in Sources */,
 				02834D6A26A9B613006FBD31 /* FollowViewController.swift in Sources */,
+				02F2CA1F26AE5B30002641DD /* Extensions.swift in Sources */,
+				02A7CDD026AA4D9000DECD38 /* PublishViewController.swift in Sources */,
 				026689A126A9491100B02C5B /* LittlePink.xcdatamodeld in Sources */,
 				02834D6626A9B269006FBD31 /* HomeViewController.swift in Sources */,
 				02834D7326A9B70D006FBD31 /* Constants.swift in Sources */,
@@ -258,6 +334,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0266899D26A9491100B02C5B /* Base */,
+				02A7CDE926AA6C2200DECD38 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -266,6 +343,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				026689A526A9491200B02C5B /* Base */,
+				02A7CDEA26AA6C2200DECD38 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -277,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -338,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -395,9 +475,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FP6FNC2Q9C;
-				INFOPLIST_FILE = LittlePink/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LittlePink/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,6 +486,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prger.LittlePink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LittlePink/LittlePink-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -416,9 +499,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FP6FNC2Q9C;
-				INFOPLIST_FILE = LittlePink/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LittlePink/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -426,6 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prger.LittlePink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LittlePink/LittlePink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
