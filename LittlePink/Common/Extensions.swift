@@ -7,6 +7,10 @@
 
 import UIKit
 
+extension UITextField{
+    var unwrappedText: String { text ?? "" }
+}
+
 extension UIView {
     @IBInspectable
     var radius: CGFloat {
@@ -29,5 +33,18 @@ extension UIViewController {
         hud.label.text = title
         hud.detailsLabel.text = subTitle
         hud.hide(animated: true, afterDelay: 2)
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        //保证tap手势不会影响到其他touch类控件的手势
+        //若不设，则本页面有tableview时，点击cell不会触发didSelectRowAtIndex（除非长按）
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

@@ -134,7 +134,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zj-Ng-V3L">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="8Zj-Ng-V3L">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vC5-Gz-WrP">
@@ -216,11 +216,82 @@
                                                     <outlet property="dropDelegate" destination="FYu-Mv-gS0" id="D8x-Ac-j5J"/>
                                                 </connections>
                                             </collectionView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="K7h-cw-2oK">
+                                                <rect key="frame" x="16" y="122" width="382" height="200"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2Vu-kU-0Ik">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="37.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="5PA-2o-kQl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="21"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="填写标题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zg3-mh-d6d">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="21"/>
+                                                                        <color key="tintColor" name="main"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                                        <connections>
+                                                                            <action selector="tfEditingBegin:" destination="FYu-Mv-gS0" eventType="editingDidBegin" id="zuK-dF-6cr"/>
+                                                                            <action selector="tfEditingChange:" destination="FYu-Mv-gS0" eventType="editingChanged" id="Mpf-BI-VFv"/>
+                                                                            <action selector="tfEditingEnd:" destination="FYu-Mv-gS0" eventType="editingDidEnd" id="eFe-HB-XZp"/>
+                                                                            <action selector="tfEndOnExit:" destination="FYu-Mv-gS0" eventType="editingDidEndOnExit" id="Tgw-cJ-qs6"/>
+                                                                            <outlet property="delegate" destination="FYu-Mv-gS0" id="JGN-WL-akl"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLe-JJ-iNN">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20.5" height="21"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLo-iM-NQ6">
+                                                                <rect key="frame" x="0.0" y="37" width="382" height="0.5"/>
+                                                                <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="0.5" id="SkL-pf-rr9"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="TdW-k5-6m8">
+                                                        <rect key="frame" x="0.0" y="55.5" width="382" height="144.5"/>
+                                                        <subviews>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1UL-Jb-jJP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="130"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="130" id="Ln4-9Q-Q9Y"/>
+                                                                </constraints>
+                                                                <color key="textColor" systemColor="quaternaryLabelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="测试文本"/>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                        <color key="value" systemColor="placeholderTextColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ff2-yw-rve">
+                                                                <rect key="frame" x="0.0" y="144" width="382" height="0.5"/>
+                                                                <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="0.5" id="ftj-tu-MVW"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="K7h-cw-2oK" firstAttribute="leading" secondItem="vC5-Gz-WrP" secondAttribute="leading" constant="16" id="1SX-uz-eqE"/>
                                             <constraint firstItem="law-Bm-OaL" firstAttribute="top" secondItem="vC5-Gz-WrP" secondAttribute="top" constant="16" id="1b3-bG-UrX"/>
                                             <constraint firstAttribute="trailing" secondItem="law-Bm-OaL" secondAttribute="trailing" constant="16" id="Ljp-uV-YX1"/>
+                                            <constraint firstItem="K7h-cw-2oK" firstAttribute="top" secondItem="law-Bm-OaL" secondAttribute="bottom" constant="16" id="MD4-EU-sFc"/>
+                                            <constraint firstAttribute="trailing" secondItem="K7h-cw-2oK" secondAttribute="trailing" constant="16" id="Mdw-5b-kGP"/>
                                             <constraint firstItem="law-Bm-OaL" firstAttribute="leading" secondItem="vC5-Gz-WrP" secondAttribute="leading" constant="16" id="sxj-tm-ezh"/>
                                         </constraints>
                                     </view>
@@ -248,6 +319,9 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="law-Bm-OaL" id="PbP-tx-o3V"/>
+                        <outlet property="textField" destination="zg3-mh-d6d" id="xOr-WG-by5"/>
+                        <outlet property="textView" destination="1UL-Jb-jJP" id="Ayw-SS-umX"/>
+                        <outlet property="titleCountLab" destination="BLe-JJ-iNN" id="23A-6R-OuB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLV-qE-sB0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -435,11 +509,20 @@
         <namedColor name="main">
             <color red="0.92900002002716064" green="0.34099999070167542" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

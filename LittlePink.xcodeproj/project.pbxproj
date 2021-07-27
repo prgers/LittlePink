@@ -22,6 +22,10 @@
 		0292213A26AA2255001CE042 /* WaterFallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0292213926AA2255001CE042 /* WaterFallViewController.swift */; };
 		02A7CDC726AA499C00DECD38 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7CDC626AA499C00DECD38 /* TabBarViewController.swift */; };
 		02A7CDD026AA4D9000DECD38 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7CDCF26AA4D9000DECD38 /* PublishViewController.swift */; };
+		02B65C6E26AFAE9B004806CA /* NoteEditVC-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B65C6D26AFAE9B004806CA /* NoteEditVC-CollectionView.swift */; };
+		02B65CB226AFE471004806CA /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B65CB126AFE471004806CA /* NoteEditVC-Config.swift */; };
+		02B65CB526B002E5004806CA /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B65CB426B002E5004806CA /* TextViewIAView.swift */; };
+		02B65CB826B00330004806CA /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B65CB726B00330004806CA /* TextViewIAView.xib */; };
 		02DE2E5626AA261D0077E216 /* WaterFallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE2E5526AA261D0077E216 /* WaterFallCollectionViewCell.swift */; };
 		02F2234126AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2234026AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift */; };
 		02F2CA1926AE4005002641DD /* NoteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2CA1826AE4005002641DD /* NoteEditViewController.swift */; };
@@ -52,6 +56,10 @@
 		02A7CDE926AA6C2200DECD38 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		02A7CDEA26AA6C2200DECD38 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		02A7CDEF26AAA91B00DECD38 /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		02B65C6D26AFAE9B004806CA /* NoteEditVC-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-CollectionView.swift"; sourceTree = "<group>"; };
+		02B65CB126AFE471004806CA /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
+		02B65CB426B002E5004806CA /* TextViewIAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
+		02B65CB726B00330004806CA /* TextViewIAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
 		02DE2E5526AA261D0077E216 /* WaterFallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFallCollectionViewCell.swift; sourceTree = "<group>"; };
 		02F2234026AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
 		02F2CA1826AE4005002641DD /* NoteEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditViewController.swift; sourceTree = "<group>"; };
@@ -166,9 +174,13 @@
 			isa = PBXGroup;
 			children = (
 				02F2CA1826AE4005002641DD /* NoteEditViewController.swift */,
+				02B65C6D26AFAE9B004806CA /* NoteEditVC-CollectionView.swift */,
 				02F2CA1B26AE54C0002641DD /* PhotoCell.swift */,
 				02F2CA6E26AE9960002641DD /* PhotoFooter.swift */,
 				02F2234026AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift */,
+				02B65CB126AFE471004806CA /* NoteEditVC-Config.swift */,
+				02B65CB426B002E5004806CA /* TextViewIAView.swift */,
+				02B65CB726B00330004806CA /* TextViewIAView.xib */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -252,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02834D6226A9ACF6006FBD31 /* .gitignore in Resources */,
+				02B65CB826B00330004806CA /* TextViewIAView.xib in Resources */,
 				026689A626A9491200B02C5B /* LaunchScreen.storyboard in Resources */,
 				026689A326A9491200B02C5B /* Assets.xcassets in Resources */,
 				0266899E26A9491100B02C5B /* Main.storyboard in Resources */,
@@ -307,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B65CB526B002E5004806CA /* TextViewIAView.swift in Sources */,
 				02F2234126AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift in Sources */,
 				02F2CA1C26AE54C0002641DD /* PhotoCell.swift in Sources */,
 				0266899726A9491100B02C5B /* AppDelegate.swift in Sources */,
@@ -318,6 +332,8 @@
 				02834D7026A9B651006FBD31 /* NearbyViewController.swift in Sources */,
 				0292213A26AA2255001CE042 /* WaterFallViewController.swift in Sources */,
 				0266899926A9491100B02C5B /* SceneDelegate.swift in Sources */,
+				02B65C6E26AFAE9B004806CA /* NoteEditVC-CollectionView.swift in Sources */,
+				02B65CB226AFE471004806CA /* NoteEditVC-Config.swift in Sources */,
 				02834D6A26A9B613006FBD31 /* FollowViewController.swift in Sources */,
 				02F2CA1F26AE5B30002641DD /* Extensions.swift in Sources */,
 				02A7CDD026AA4D9000DECD38 /* PublishViewController.swift in Sources */,

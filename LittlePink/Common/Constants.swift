@@ -26,6 +26,8 @@ let kChannels = ["推荐", "旅行", "娱乐", "才艺", "美妆", "美食", "�
 let kWaterFallPadding: CGFloat = 4
 
 let kMaxPhotoCount = 9
+let kMaxNoteTitleCount = 20
+
 
 
 
