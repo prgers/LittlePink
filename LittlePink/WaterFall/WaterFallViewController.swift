@@ -13,7 +13,6 @@ class WaterFallViewController: UICollectionViewController {
     
     var channel = ""
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,19 +17,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rO2-9z-qz2">
-                    <rect key="frame" x="288" y="0.5" width="110" height="43.5"/>
+                    <rect key="frame" x="359" y="0.5" width="39" height="43.5"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEY-Tu-4VX">
-                            <rect key="frame" x="0.0" y="13" width="71" height="18"/>
+                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEY-Tu-4VX">
+                            <rect key="frame" x="0.0" y="13" width="0.0" height="18"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny1-lY-NYP">
-                                    <rect key="frame" x="0.0" y="0.0" width="34.5" height="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny1-lY-NYP">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" systemColor="systemPinkColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4y-2c-Vga">
-                                    <rect key="frame" x="34.5" y="0.0" width="36.5" height="18"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4y-2c-Vga">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" systemColor="tertiaryLabelColor"/>
                                     <nil key="highlightedColor"/>
@@ -36,10 +37,12 @@
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cs-5a-Ba1">
-                            <rect key="frame" x="71" y="13.5" width="39" height="17"/>
+                            <rect key="frame" x="0.0" y="13.5" width="39" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title="完成"/>
+                            <state key="normal" title="完成">
+                                <color key="titleColor" name="blue"/>
+                            </state>
                         </button>
                     </subviews>
                 </stackView>
@@ -64,11 +67,17 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="doneBtn" destination="1cs-5a-Ba1" id="Mv0-TD-cfk"/>
+                <outlet property="maxTextCountLabel" destination="I4y-2c-Vga" id="00d-MK-IvZ"/>
+                <outlet property="textCountLabel" destination="ny1-lY-NYP" id="rFr-BS-iqQ"/>
+                <outlet property="textCountStackView" destination="fEY-Tu-4VX" id="xjF-no-CyY"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="blue">
+            <color red="0.37647058823529411" green="0.52941176470588236" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="quaternaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

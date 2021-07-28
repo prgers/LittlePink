@@ -9,20 +9,26 @@ import UIKit
 
 class NoteEditViewController: UIViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
-    
     var photos:[UIImage] = []
+    lazy var locationManager = CLLocationManager()
     
     var photoCount: Int{photos.count}
+    var textViewIAView: TextViewIAView {textView.inputAccessoryView as! TextViewIAView}
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var titleCountLab: UILabel!
+    @IBOutlet weak var channelIcon: UIImageView!
+    @IBOutlet weak var channelLabel: UILabel!
+    @IBOutlet weak var channelPlaceholderLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //界面相关配置
         config()
+        
+        locationManager.requestWhenInUseAuthorization()
     }
 
     
@@ -55,6 +61,28 @@ class NoteEditViewController: UIViewController {
         titleCountLab.text = "\(kMaxNoteTitleCount - textField.unwrappedText.count)"
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let channelVC = segue.destination as? ChannelViewController {
+            channelVC.channelDelegate = self
+        }
+    }
+    
+}
+
+extension NoteEditViewController: ChannelVCDelegate {
+    func updateChannel(channel: String, subChannel: String) {
+        channelIcon.tintColor = blueColor
+        channelLabel.text = subChannel
+        channelLabel.textColor = blueColor
+        channelPlaceholderLabel.isHidden = true
+    }
+}
+
+extension NoteEditViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        guard textView.markedTextRange == nil else {return}
+        textViewIAView.currentTextCount = textView.text.count
+    }
 }
 
 //extension NoteEditViewController: UITextFieldDelegate {

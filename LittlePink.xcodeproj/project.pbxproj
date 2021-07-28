@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02268CBA26B0EF9900E32DE8 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02268CB926B0EF9900E32DE8 /* Protocols.swift */; };
+		02268CBD26B12D4A00E32DE8 /* PoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02268CBC26B12D4A00E32DE8 /* PoiViewController.swift */; };
 		0266899726A9491100B02C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266899626A9491100B02C5B /* AppDelegate.swift */; };
 		0266899926A9491100B02C5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266899826A9491100B02C5B /* SceneDelegate.swift */; };
 		0266899E26A9491100B02C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0266899C26A9491100B02C5B /* Main.storyboard */; };
 		026689A126A9491100B02C5B /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0266899F26A9491100B02C5B /* LittlePink.xcdatamodeld */; };
 		026689A326A9491200B02C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026689A226A9491200B02C5B /* Assets.xcassets */; };
 		026689A626A9491200B02C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026689A426A9491200B02C5B /* LaunchScreen.storyboard */; };
+		0281BC2F26B0BED8000DA5A0 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281BC2E26B0BED8000DA5A0 /* ChannelViewController.swift */; };
+		0281BC3226B0C1ED000DA5A0 /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281BC3126B0C1ED000DA5A0 /* ChannelTableViewController.swift */; };
 		02834D6226A9ACF6006FBD31 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 02834D6126A9ACF6006FBD31 /* .gitignore */; };
 		02834D6626A9B269006FBD31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D6526A9B269006FBD31 /* HomeViewController.swift */; };
 		02834D6A26A9B613006FBD31 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02834D6926A9B613006FBD31 /* FollowViewController.swift */; };
@@ -36,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02268CB926B0EF9900E32DE8 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		02268CBC26B12D4A00E32DE8 /* PoiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiViewController.swift; sourceTree = "<group>"; };
 		0266899326A9491100B02C5B /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0266899626A9491100B02C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0266899826A9491100B02C5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +50,8 @@
 		026689A226A9491200B02C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026689A526A9491200B02C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026689A726A9491200B02C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0281BC2E26B0BED8000DA5A0 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		0281BC3126B0C1ED000DA5A0 /* ChannelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
 		02834D6126A9ACF6006FBD31 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		02834D6526A9B269006FBD31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		02834D6926A9B613006FBD31 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
@@ -110,10 +118,10 @@
 				02A7CDDA26AA65B900DECD38 /* WaterFall */,
 				02834D7526A9B871006FBD31 /* Home */,
 				02A7CDDC26AA65D100DECD38 /* Common */,
-				02A7CDC626AA499C00DECD38 /* TabBarViewController.swift */,
-				02A7CDEE26AAA8D500DECD38 /* Demo */,
 				02F2CA7126AEB258002641DD /* NoteEdit */,
+				02A7CDEE26AAA8D500DECD38 /* Demo */,
 				02F2CA7C26AEC495002641DD /* LittlePink-Bridging-Header.h */,
+				02A7CDC626AA499C00DECD38 /* TabBarViewController.swift */,
 			);
 			path = LittlePink;
 			sourceTree = "<group>";
@@ -143,6 +151,7 @@
 			children = (
 				02834D7226A9B70D006FBD31 /* Constants.swift */,
 				02F2CA1E26AE5B30002641DD /* Extensions.swift */,
+				02268CB926B0EF9900E32DE8 /* Protocols.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -181,6 +190,9 @@
 				02B65CB126AFE471004806CA /* NoteEditVC-Config.swift */,
 				02B65CB426B002E5004806CA /* TextViewIAView.swift */,
 				02B65CB726B00330004806CA /* TextViewIAView.xib */,
+				0281BC2E26B0BED8000DA5A0 /* ChannelViewController.swift */,
+				0281BC3126B0C1ED000DA5A0 /* ChannelTableViewController.swift */,
+				02268CBC26B12D4A00E32DE8 /* PoiViewController.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -321,11 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B65CB526B002E5004806CA /* TextViewIAView.swift in Sources */,
+				02268CBD26B12D4A00E32DE8 /* PoiViewController.swift in Sources */,
+				02268CBA26B0EF9900E32DE8 /* Protocols.swift in Sources */,
 				02F2234126AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift in Sources */,
 				02F2CA1C26AE54C0002641DD /* PhotoCell.swift in Sources */,
 				0266899726A9491100B02C5B /* AppDelegate.swift in Sources */,
 				02DE2E5626AA261D0077E216 /* WaterFallCollectionViewCell.swift in Sources */,
 				02A7CDC726AA499C00DECD38 /* TabBarViewController.swift in Sources */,
+				0281BC3226B0C1ED000DA5A0 /* ChannelTableViewController.swift in Sources */,
 				02F2CA1926AE4005002641DD /* NoteEditViewController.swift in Sources */,
 				02F2CA6F26AE9960002641DD /* PhotoFooter.swift in Sources */,
 				02834D6D26A9B632006FBD31 /* DiscoveryViewController.swift in Sources */,
@@ -339,6 +354,7 @@
 				02A7CDD026AA4D9000DECD38 /* PublishViewController.swift in Sources */,
 				026689A126A9491100B02C5B /* LittlePink.xcdatamodeld in Sources */,
 				02834D6626A9B269006FBD31 /* HomeViewController.swift in Sources */,
+				0281BC2F26B0BED8000DA5A0 /* ChannelViewController.swift in Sources */,
 				02834D7326A9B70D006FBD31 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

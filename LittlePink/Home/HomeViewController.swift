@@ -14,7 +14,7 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         
         
         //MARK: 设置顶部的bar
-        settings.style.selectedBarBackgroundColor = UIColor(named: "main")!
+        settings.style.selectedBarBackgroundColor = mainColor
         settings.style.selectedBarHeight = 3
         
         settings.style.buttonBarItemBackgroundColor = .clear

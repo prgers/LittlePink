@@ -7,6 +7,15 @@
 
 import UIKit
 
+extension Bundle {
+    static func loadView<T>(fromNib name: String, with type: T.Type) -> T {
+        if let view = Bundle.main.loadNibNamed(name, owner: nil, options: nil)?.first as? T {
+            return view
+        }
+        fatalError("加载\(type)类型的view失败")
+    }
+}
+
 extension UITextField{
     var unwrappedText: String { text ?? "" }
 }

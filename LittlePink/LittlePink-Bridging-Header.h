@@ -4,3 +4,5 @@
 
 #import "MBProgressHUD.h"
 #import "UITextView+Placeholder.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>

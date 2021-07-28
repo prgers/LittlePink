@@ -29,10 +29,10 @@ extension NoteEditViewController {
         textView.tintColor = UIColor.init(named: "main")
         textView.tintColorDidChange()
         
-        if let textViewIAView = Bundle.main.loadNibNamed("TextViewIAView", owner: nil, options: nil)?.first as? TextViewIAView {
-            textViewIAView.doneBtn.addTarget(self, action: #selector(resignTextView), for: .touchUpInside)
-            textView.inputAccessoryView = textViewIAView
-        }
+        let textViewIAView = Bundle.loadView(fromNib: "TextViewIAView", with: TextViewIAView.self)
+        textViewIAView.doneBtn.addTarget(self, action: #selector(resignTextView), for: .touchUpInside)
+        textViewIAView.maxTextCountLabel.text = "/\(kMaxNoteTextCount)"
+        textView.inputAccessoryView = textViewIAView
         
     }
 }

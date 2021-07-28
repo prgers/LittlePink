@@ -14,7 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        config()
+        
         return true
     }
 
@@ -77,5 +79,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+extension AppDelegate {
+    func config() {
+        
+        //高德地图
+        AMapServices.shared().enableHTTPS = true
+        AMapServices.shared().apiKey = "ebb5c634a51ee5ce4561a247acf86418"
+    }
 }
 
