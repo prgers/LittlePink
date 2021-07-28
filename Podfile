@@ -15,5 +15,6 @@ target 'LittlePink' do
   pod 'UITextView+Placeholder'
   pod 'AMapLocation'
   pod 'AMapSearch'
+  pod 'MJRefresh'
 
 end

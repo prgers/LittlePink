@@ -49,8 +49,16 @@ let kMaxPhotoCount = 9
 let kMaxNoteTitleCount = 20
 let kMaxNoteTextCount = 1000
 
+//颜色
 let mainColor = UIColor(named: "main")!
 let blueColor = UIColor(named: "blue")!
+
+//MARK: -高德
+let kNoPOIPH = "未知地点"
+let kPOIsInitArr = [["不显示位置", ""]]
+let kPOIsOffset = 20
+
+
 
 
 

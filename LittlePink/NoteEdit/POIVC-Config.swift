@@ -8,6 +8,7 @@
 extension POIViewController {
     func config() {
         tableView.tableFooterView = UIView()
+        tableView.mj_footer = footer
         
         //高德地图
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters

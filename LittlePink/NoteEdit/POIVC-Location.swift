@@ -41,22 +41,41 @@ extension POIViewController {
             if let location = location {
                 weakSelf.latitude = location.coordinate.latitude
                 weakSelf.longitude = location.coordinate.longitude
-                
-                weakSelf.mapSearch?.aMapPOIAroundSearch(weakSelf.request)
+                weakSelf.footer.setRefreshingTarget(weakSelf, refreshingAction: #selector(weakSelf.aroundSearchPullToRefresh))
+                weakSelf.makeAroundSearch()
             }
                 
             if let reGeocode = reGeocode {
                 guard let formattedAddress = reGeocode.formattedAddress, !formattedAddress.isEmpty else {return}
-                let province = reGeocode.province == reGeocode.city ? "" : reGeocode.province!
+                let province = reGeocode.province == reGeocode.city ? "" : reGeocode.province
                 
-                let address = "\(province)\(reGeocode.city!)\(reGeocode.district!)\(reGeocode.street ?? "")\(reGeocode.number ?? "")"
+                let address = "\(province.unwrappedText)\(reGeocode.city.unwrappedText)\(reGeocode.district.unwrappedText)\(reGeocode.street.unwrappedText)\(reGeocode.number.unwrappedText)"
                 
-                weakSelf.pois.append([reGeocode.poiName!, address])
+                weakSelf.pois.append([reGeocode.poiName ?? kNoPOIPH, address])
+                weakSelf.aroundSearchedPOIs.append([reGeocode.poiName ?? kNoPOIPH, address])
                 DispatchQueue.main.async {
                     weakSelf.tableView.reloadData()
                 }
             }
         })
     }
-    
+}
+
+extension POIViewController {
+    func makeAroundSearch(_ page: Int = 1) {
+        aroundSearchRequest.page = page
+        mapSearch?.aMapPOIAroundSearch(aroundSearchRequest)
+    }
+}
+
+extension POIViewController {
+    @objc private func aroundSearchPullToRefresh() {
+        currentAroundPage += 1
+        makeAroundSearch(currentAroundPage)
+        if currentAroundPage < pageCount {
+            footer.endRefreshing()
+        }else {
+            footer.endRefreshingWithNoMoreData()
+        }
+    }
 }

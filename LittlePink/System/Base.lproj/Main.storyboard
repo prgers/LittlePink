@@ -73,7 +73,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="swn-c3-d1X"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gUI-hY-TBx" id="mHt-s2-jPk"/>
+                                </connections>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l02-gY-VIa">
                                 <rect key="frame" x="0.0" y="88" width="414" height="0.5"/>
@@ -82,7 +85,7 @@
                                     <constraint firstAttribute="height" constant="0.5" id="YfU-gl-jHc"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e8n-9y-god">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e8n-9y-god">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -143,6 +146,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="T4b-s2-lGn" id="Nd3-3p-AA8"/>
                         <outlet property="tableView" destination="e8n-9y-god" id="EsR-Wj-Oja"/>
                     </connections>
                 </viewController>
