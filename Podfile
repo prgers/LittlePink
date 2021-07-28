@@ -14,5 +14,6 @@ target 'LittlePink' do
   pod 'SKPhotoBrowser'
   pod 'UITextView+Placeholder'
   pod 'AMapLocation'
+  pod 'AMapSearch'
 
 end

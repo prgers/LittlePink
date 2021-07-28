@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		02268CBA26B0EF9900E32DE8 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02268CB926B0EF9900E32DE8 /* Protocols.swift */; };
-		02268CBD26B12D4A00E32DE8 /* PoiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02268CBC26B12D4A00E32DE8 /* PoiViewController.swift */; };
+		02268CBD26B12D4A00E32DE8 /* POIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02268CBC26B12D4A00E32DE8 /* POIViewController.swift */; };
+		02268E1326B1956100E32DE8 /* POICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02268E1226B1956100E32DE8 /* POICell.swift */; };
+		02268E1626B19F2300E32DE8 /* POIVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02268E1526B19F2300E32DE8 /* POIVC-Config.swift */; };
+		02268E1926B19F7000E32DE8 /* POIVC-Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02268E1826B19F7000E32DE8 /* POIVC-Location.swift */; };
 		0266899726A9491100B02C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266899626A9491100B02C5B /* AppDelegate.swift */; };
 		0266899926A9491100B02C5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266899826A9491100B02C5B /* SceneDelegate.swift */; };
 		0266899E26A9491100B02C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0266899C26A9491100B02C5B /* Main.storyboard */; };
@@ -41,7 +44,10 @@
 
 /* Begin PBXFileReference section */
 		02268CB926B0EF9900E32DE8 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		02268CBC26B12D4A00E32DE8 /* PoiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiViewController.swift; sourceTree = "<group>"; };
+		02268CBC26B12D4A00E32DE8 /* POIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIViewController.swift; sourceTree = "<group>"; };
+		02268E1226B1956100E32DE8 /* POICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POICell.swift; sourceTree = "<group>"; };
+		02268E1526B19F2300E32DE8 /* POIVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Config.swift"; sourceTree = "<group>"; };
+		02268E1826B19F7000E32DE8 /* POIVC-Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Location.swift"; sourceTree = "<group>"; };
 		0266899326A9491100B02C5B /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0266899626A9491100B02C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0266899826A9491100B02C5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,7 +198,10 @@
 				02B65CB726B00330004806CA /* TextViewIAView.xib */,
 				0281BC2E26B0BED8000DA5A0 /* ChannelViewController.swift */,
 				0281BC3126B0C1ED000DA5A0 /* ChannelTableViewController.swift */,
-				02268CBC26B12D4A00E32DE8 /* PoiViewController.swift */,
+				02268CBC26B12D4A00E32DE8 /* POIViewController.swift */,
+				02268E1226B1956100E32DE8 /* POICell.swift */,
+				02268E1526B19F2300E32DE8 /* POIVC-Config.swift */,
+				02268E1826B19F7000E32DE8 /* POIVC-Location.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -332,8 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02268E1326B1956100E32DE8 /* POICell.swift in Sources */,
 				02B65CB526B002E5004806CA /* TextViewIAView.swift in Sources */,
-				02268CBD26B12D4A00E32DE8 /* PoiViewController.swift in Sources */,
+				02268CBD26B12D4A00E32DE8 /* POIViewController.swift in Sources */,
+				02268E1926B19F7000E32DE8 /* POIVC-Location.swift in Sources */,
 				02268CBA26B0EF9900E32DE8 /* Protocols.swift in Sources */,
 				02F2234126AEFE69002BB1E0 /* NoteEditVC-DragDrop.swift in Sources */,
 				02F2CA1C26AE54C0002641DD /* PhotoCell.swift in Sources */,
@@ -356,6 +367,7 @@
 				02834D6626A9B269006FBD31 /* HomeViewController.swift in Sources */,
 				0281BC2F26B0BED8000DA5A0 /* ChannelViewController.swift in Sources */,
 				02834D7326A9B70D006FBD31 /* Constants.swift in Sources */,
+				02268E1626B19F2300E32DE8 /* POIVC-Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

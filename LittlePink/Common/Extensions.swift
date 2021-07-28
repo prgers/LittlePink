@@ -7,6 +7,11 @@
 
 import UIKit
 
+
+extension Optional where Wrapped == String{
+    var unwrappedText: String { self ?? "" }
+}
+
 extension Bundle {
     static func loadView<T>(fromNib name: String, with type: T.Type) -> T {
         if let view = Bundle.main.loadNibNamed(name, owner: nil, options: nil)?.first as? T {
@@ -34,6 +39,18 @@ extension UIView {
 }
 
 extension UIViewController {
+    
+    //MARK: 加载框--手动隐藏
+    func showLoadHUD(_ title: String? = nil) {
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.label.text = title
+    }
+    
+    func hideLoadHUD() {
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
+    }
     
     //MARK: 提示框--自动隐藏
     func showTextHUD(_ title: String, _ subTitle: String? = nil) {

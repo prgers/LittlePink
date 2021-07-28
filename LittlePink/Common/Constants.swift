@@ -14,7 +14,7 @@ let kDiscoveryVCID = "DiscoveryVCID"
 let kWaterFallVCID = "WaterFallVCID"
 let kNoteEditVCID = "NoteEditVCID"
 let kChannelTableVC = "ChannelTableVC"
-let kPoiVCID = "PoiVCID"
+let kPOIVCID = "POIVCID"
 
 
 
